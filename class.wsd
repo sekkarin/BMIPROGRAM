@@ -1,0 +1,23 @@
+@startuml
+class HumanBegin{
+    -height Integer
+    -weight Integer
+    +setHeight(height) void
+    +setWeight(weight) void
+    +getHeight() String
+    +getWeight() String
+    +myBMI() Integer
+    +myAnayzelBMI() String
+
+}
+class CalBMIHuman  {
+    +calBMI(weight,height) Integer
+}
+class AnayzelBMI  {
+    +anayzel(mbi) String
+}
+HumanBegin <-- CalBMIHuman
+HumanBegin <-- AnayzelBMI
+
+@enduml
+boole

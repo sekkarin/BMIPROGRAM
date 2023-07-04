@@ -1,0 +1,98 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: mintcream;
+  text-align: center;
+  
+background: rgb(214,22,22);
+background: linear-gradient(90deg, rgba(214,22,22,1) 18%, rgba(157,56,141,1) 52%, rgba(41,158,40,1) 100%);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  gap: 10px;
+}
+.input {
+  height: 55px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.input:hover {
+  color: gray;
+  scale: 1.05;
+  animation: rotation 5s infinite linear;
+}
+.input::placeholder:hover {
+  color: aliceblue;
+  font-size: x-large;
+}
+
+h5 {
+  /* font-size: 55px; */
+  font-size: 72px;
+  background: -webkit-linear-gradient(
+    rgba(191, 41, 155, 1),
+    rgba(0, 212, 255, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+h5:hover{
+    scale: 2.8;
+}
+label {
+  font-size: 24px;
+  background: -webkit-linear-gradient(
+    rgba(191, 63, 41, 1),
+    rgba(41, 158, 40, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  color: #000;
+}
+label:hover{
+    scale: 1.15;
+    color: aliceblue;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+    background-color: brown;
+    /* width: 100%; */
+  }
+  to {
+    transform: rotate(5deg);
+    background-color: aqua;
+    /* width: 0%;   */
+  }
+}
+
+.btn {
+  margin-top: 10px;
+  margin-top: 10px;
+  height: 100px;
+  border-color: forestgreen;
+  background-color: forestgreen;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: aliceblue;
+}
+.btn:hover {
+    background: -webkit-linear-gradient(
+        rgba(191, 493, 11, 1),
+        rgba(41, 158, 40, 1)
+      );
+  font-size: 2rem;
+  color: gray;
+  scale: 1.05;
+}
+.text{
+    color: burlywood;
+    font-size: 50px;
+}

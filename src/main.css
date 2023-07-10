@@ -24,7 +24,8 @@ form {
 .input:hover {
   color: gray;
   scale: 1.05;
-  animation: rotation 5s infinite linear;
+  /* animation: rotation 1s linear infinite; */
+  animation: rotation 3s infinite linear;
 }
 .input::placeholder:hover {
   color: aliceblue;
@@ -49,12 +50,12 @@ label {
   font-size: 24px;
   background: -webkit-linear-gradient(
     rgba(191, 63, 41, 1),
-    rgba(41, 158, 40, 1)
+    white
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bolder;
-  color: #000;
+  /* color: white; */
 }
 label:hover{
     scale: 1.15;
@@ -67,7 +68,7 @@ label:hover{
     /* width: 100%; */
   }
   to {
-    transform: rotate(5deg);
+    transform: rotate(359deg);
     background-color: aqua;
     /* width: 0%;   */
   }

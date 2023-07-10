@@ -18,12 +18,14 @@
         public function getWeight(){
             return $this->weight;
         }
+
         public function myBMI (){
              $calMbiHum = new CalBMIHuman();
             return $calMbiHum->calBMI($this->weight,$this->height);
             // return $this->weight /( pow($this->height,2));
             // return $calMbiHum->calBMI($weight,$height);
         }
+        
         public function myAnayzelBMI (){
             $anayzel = new AnayzelBMI();
             return $anayzel->anayzel($this-> myBMI());
@@ -32,7 +34,6 @@
     }
     class CalBMIHuman  {
         public function calBMI($weight,$height){
-            
             return   $weight / ($height * $height);
         }
     }
@@ -51,7 +52,6 @@
     
         }
     }
-    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -78,8 +78,6 @@
             echo "<p class='text'>BMI = ".number_format($myself->myBMI() ,2)."</p>";
             echo "<p class='text'>รูปร่าง = ".$myself->myAnayzelBMI()."</p>";
           }
-
     ?>
-
 </body>
 </html>

@@ -1,13 +1,10 @@
 <?php
 include_once "./HumanBegin.php";
 class AnayzelBMI  {
-    public $human ;
+    private $human ;
     public function anayzel($weight,$height){
-        $human = new HumanBegin($weight,$height);
-        $_weight  = $human->getWeight();
-        $_height  = $human->getHeight();
-        
-        $bmi = $human->getMbI();
+        $this->human = new HumanBegin($weight,$height);    
+        $bmi = $this->human->getMbI();
         if ($bmi <= 18.5 && $bmi > 0) {
             return "ผอมเกินไป";
         }elseif($bmi >= 18.6 && $bmi <=  24.0){

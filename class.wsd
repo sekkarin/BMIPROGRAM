@@ -4,20 +4,19 @@ class HumanBegin{
     -weight Integer
     +setHeight(height) void
     +setWeight(weight) void
+    +setBmi(bmi) void
     +getHeight() String
-    +getWeight() String
-    +myBMI() Integer
-    +myAnayzelBMI() String
-
+    +getBmi() String
 }
 class CalBMIHuman  {
-    +calBMI(weight,height) Integer
+    -human HumanBegin
+    +calBMI(weight height) Integer
 }
 class AnayzelBMI  {
-    +anayzel(mbi) String
+    -human HumanBegin
+    +anayzel(weight height) String
 }
-HumanBegin <-- CalBMIHuman
-HumanBegin <-- AnayzelBMI
+HumanBegin --* CalBMIHuman
+HumanBegin --* AnayzelBMI
 
 @enduml
-boole

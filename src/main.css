@@ -1,52 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html {
   padding: 0;
   margin: 0;
 }
 body {
-  background-color: mintcream;
+  /* background-color: #164B60; */
   text-align: center;
-  
-background: rgb(214,22,22);
-background: linear-gradient(90deg, rgba(214,22,22,1) 18%, rgba(157,56,141,1) 52%, rgba(41,158,40,1) 100%);
 }
-form {
+.flex-Wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flex-Wrapper-column {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin: auto;
-  gap: 10px;
+  justify-content: center;
 }
+.image {
+  width: 380px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.container {
+  width: 50%;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+/* .container {
+  width: 50%;
+  margin-left: 50%;
+  margin-right: 50%;
+} */
+.flex-1 {
+  flex-grow: 1;
+}
+
+.form {
+  margin-top: 20px;
+  gap: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 .input {
-  height: 55px;
+  height: 20px;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .input:hover {
   color: gray;
-  scale: 1.05;
-  /* animation: rotation 1s linear infinite; */
-  animation: rotation 3s infinite linear;
+  scale: 1.01;
 }
+.btn{
+  height: 35px;
+  background-color: #3F2305;
+  color: aliceblue;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+/* 
 .input::placeholder:hover {
   color: aliceblue;
   font-size: x-large;
 }
 
 h5 {
-  /* font-size: 55px; */
   font-size: 72px;
-  background: -webkit-linear-gradient(
-    rgba(191, 41, 155, 1),
-    rgba(0, 212, 255, 1)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #3F2305;
   
 }
 h5:hover{
     scale: 2.8;
-}
-label {
+} */
+/* label {
   font-size: 24px;
   background: -webkit-linear-gradient(
     rgba(191, 63, 41, 1),
@@ -55,26 +87,14 @@ label {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bolder;
-  /* color: white; */
-}
-label:hover{
+  
+} */
+/* label:hover{
     scale: 1.15;
     color: aliceblue;
-}
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-    background-color: brown;
-    /* width: 100%; */
-  }
-  to {
-    transform: rotate(359deg);
-    background-color: aqua;
-    /* width: 0%;   */
-  }
-}
+} */
 
-.btn {
+/* .btn {
   margin-top: 10px;
   margin-top: 10px;
   height: 100px;
@@ -96,4 +116,4 @@ label:hover{
 .text{
     color: burlywood;
     font-size: 50px;
-}
+} */
